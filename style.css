@@ -1,5 +1,4 @@
 /* Start Header */
-
 .navbar {
   position: fixed !important;
   top: 0;
@@ -36,7 +35,6 @@
   font-weight: bold !important;
   padding: 8px 15px;
   border-radius: 20px !important;
-
 }
 
 .btn-custom:hover {
@@ -47,7 +45,8 @@
 /* Start Main */
 .full-width-image {
   position: relative;
-  background: url("https://i.postimg.cc/yN838mXH/image.webp") no-repeat center center/cover;
+  background: url("https://i.postimg.cc/yN838mXH/image.webp") no-repeat center
+    center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -121,32 +120,26 @@
 }
 
 /* End Main */
-
 /* Start about */
 .about-section {
   background-color: #f8f9fa;
 }
-
 .about-section h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #333;
 }
-
 .about-box {
+  cursor: pointer;
+  color: #007bff !important;
   background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
 }
-
 .about-box:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
 /* End about */
-
 /* Start services */
 .services-section {
   background-color: #f8f9fa;
@@ -159,7 +152,6 @@
 }
 
 .service-card {
-  
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -169,7 +161,6 @@
 }
 
 .service-card img {
-  
   height: 200px;
   object-fit: cover;
 }
@@ -178,7 +169,6 @@
 }
 
 /* End services */
-
 /* Start Footer */
 footer {
   background-color: #222;
