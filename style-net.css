@@ -1,0 +1,55 @@
+.full-width-image {
+  background: url("https://i.postimg.cc/LhKL3X14/network.webp") no-repeat center
+    center/cover;
+}
+/* card */
+body {
+    background-color: #f8f9fa !important;
+    direction: rtl !important;
+    text-align: right !important;
+    font-family: 'Tajawal', sans-serif !important;
+}
+.card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease-in-out !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-5px) !important;
+}
+.card-header {
+    font-weight: bold !important;
+    background-color: #007bff !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 12px !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+.card-body {
+    flex-grow: 1 !important;
+}
+.card-footer {
+    text-align: center !important;
+    padding: 8px !important;
+    border-radius: 0 0 12px 12px !important;
+    font-size: 14px !important;
+}
+.icon {
+    font-size: 30px !important;
+    text-align: center !important;
+    color: #007bff !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+}
+.equal-height {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+.card:hover {
+  background-color: black !important;
+  color: white !important;
+}
