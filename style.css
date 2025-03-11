@@ -155,19 +155,27 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .service-card:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .service-card img {
-  height: 200px;
-  object-fit: cover;
-}
-.service-card .card-body {
-  padding: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
+.service-card .card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* End services */
 /* Start Footer */
 footer {
