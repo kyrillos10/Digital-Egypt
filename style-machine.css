@@ -1,0 +1,59 @@
+.full-width-image {
+    background: url("https://i.postimg.cc/C5fyBFDs/learn-machine.webp") no-repeat center
+      center/cover;
+  }
+
+  /* card */
+  body {
+    background-color: #f8f9fa !important;
+    direction: rtl !important;
+    text-align: right !important;
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+.main-title {
+    text-align: center !important;
+    font-size: 42px !important;
+    font-weight: bold !important;
+    background: linear-gradient(to right, #007bff, #6610f2) !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 40px !important;
+}
+
+.card {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease-in-out !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    cursor: pointer;
+}
+.card:hover {
+    background-color: black;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px) !important;
+}
+
+.card-header {
+    font-weight: bold !important;
+    background-color: #007bff !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 12px !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.card-body {
+    flex-grow: 1 !important;
+}
+
+.card-footer {
+    text-align: center !important;
+    padding: 8px !important;
+    border-radius: 0 0 12px 12px !important;
+    font-size: 14px !important;
+}
