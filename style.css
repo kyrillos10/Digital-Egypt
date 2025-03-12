@@ -1,3 +1,7 @@
+/* This For Select Word */
+* ::selection {
+  background-color: #ffcc00;
+}
 /* Start Header */
 .navbar {
   position: fixed !important;
@@ -25,7 +29,6 @@
   font-size: 18px;
   margin: 0 10px;
 }
-
 .navbar-nav .nav-link:hover {
   color: #ffd700 !important;
 }
@@ -36,12 +39,10 @@
   padding: 8px 15px;
   border-radius: 20px !important;
 }
-
 .btn-custom:hover {
   background-color: #ffcc00 !important;
 }
 /* End Header */
-
 /* Start Main */
 .full-width-image {
   position: relative;
@@ -52,7 +53,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -61,44 +61,36 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-
 .content {
   position: relative;
   z-index: 2;
   text-align: center;
 }
-
 .content h1 {
   font-size: 48px;
   font-weight: bold !important;
 }
-
 .content p {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
 .btn {
   padding: 12px 25px !important;
   border-radius: 25px !important;
   font-weight: bold !important;
 }
-
 .btn-primary {
   background-color: #ffd700 !important;
   color: black !important;
   border: none !important;
 }
-
 .btn-primary:hover {
   background-color: #ffcc00 !important;
 }
-
 .btn-outline-light:hover {
   background-color: white !important;
   color: black !important;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .full-width-image {
@@ -118,7 +110,6 @@
     padding: 10px 20px;
   }
 }
-
 /* End Main */
 /* Start about */
 .about-section {
@@ -177,9 +168,33 @@
   justify-content: space-between;
 }
 /* End services */
+/* btn scrool */
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.scroll-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+/* End btn scrool */
 /* Start Footer */
 footer {
-  background-color: #222;
+  background-color: #342d2d;
+  background: url("https://i.postimg.cc/htdBBzkP/Fat-Footer-Ar.png") no-repeat center
+  center/cover;
   color: white;
   padding: 15px 0;
 }
@@ -194,6 +209,6 @@ footer p {
   font-size: 20px;
 }
 .footer-icons a:hover {
-  color: #ffd700;
+  color: #ffd700 !important;
 }
 /* End Footer */
