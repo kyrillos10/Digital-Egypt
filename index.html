@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- لوجو الصفحة -->
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/NMyy1QzC/image.png" />
-    <!-- عنوان الصفحه -->
+    <!--  Logo of Page -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/nLSjjX0Q/image.png"
+    />
+    <!-- Title Of Page  -->
     <title>خدمات مصر الرقمية</title>
-    <!--  لينك تنسيق الصفحة  بواسطة css-->
+    <!--Link of Style-->
     <link rel="stylesheet" href="style.css" />
     <!-- bootstrap -->
     <link
@@ -16,6 +20,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Flatpicker -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <!-- FontAwsome -->
     <link
       rel="stylesheet"
@@ -23,19 +32,19 @@
     />
   </head>
   <body>
-
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <!--  Logo And Name -->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.html" target="_blank">
+          <div class="datetime-bar" id="clock"></div>
           <img
-            src="https://i.postimg.cc/nLSjjX0Q/image.png"
-            alt="لوجو خدمات مصر الرقمية"
+          src="https://i.postimg.cc/nLSjjX0Q/image.png"
+          alt="لوجو خدمات مصر الرقمية"
           />
           خدمات مصر الرقمية
         </a>
-
+       
         <!-- Button in Mobile-->
         <button
           class="navbar-toggler"
@@ -59,10 +68,13 @@
               <a class="nav-link" href="#services">خدماتنا</a>
             </li>
           </ul>
-
           <!-- button-->
-          <a href="#" class="btn btn-custom ms-lg-3 mt-2 mt-lg-0">
-            تسجيل الدخول</a
+          <a
+            target="_blank"
+            href="query.html"
+            class="btn btn-custom ms-lg-3 mt-2 mt-lg-0"
+          >
+            خدمات السجل</a
           >
         </div>
       </div>
@@ -75,14 +87,13 @@
       <div class="content">
         <h1>خدمات مصر الرقمية</h1>
         <p class="lead">نقدم لك أفضل الخدمات الرقمية بكل سهولة وأمان.</p>
-        <a href="#about" class="btn btn-primary me-2">اقرأ المزيد</a>
-        <a href="#services" class="btn btn-outline-light">خدماتنا</a>
+        <a href="https://aws.amazon.com/ar/what-is/digital-transformation/" target="_blank" class="btn btn-primary me-2" ><b>اقرا المزيد </b> </a>
+        <a  href="#services" class="btn btn-outline-light">خدماتنا</a>
       </div>
     </section>
     <!-- End main  -->
 
     <!-- Start About -->
-    
     <section id="about" class="about-section text-center py-5 mt-5">
       <div class="container">
         <h2 class="mb-4">من نحن</h2>
@@ -127,112 +138,181 @@
     </section>
 
     <!-- End About -->
-   <!-- Start Services -->
-<section id="services" class="services-section text-center py-5">
-  <div class="container">
-    <h2 class="mb-4">خدماتنا</h2>
-    <div class="row g-4">
-      <!-- seivece list  -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/WzkkPsmq/image.jpg" class="card-img-top" alt="الخدمات الرقمية والتحول الرقمي" />
-          <div class="card-body">
-            <h5 class="card-title">الخدمات الرقمية والتحول الرقمي</h5>
-            <p class="card-text">مستقبل أسرع وأكثر ذكاءً – حلول رقمية مبتكرة. ومستقبل أكثر سرعة وذكاءً من خلال حلول رقمية مبتكرة وشاملة تعزز الكفاءة وتواكب التطورات التكنولوجية.</p>
-            <a href="serivce.html" class="btn btn-primary">اعرف أكثر</a>
+    <!-- Start Services -->
+    <section id="services" class="services-section text-center py-5">
+      <div class="container">
+        <h2 class="mb-4">خدماتنا</h2>
+        <div class="row g-4">
+          <!-- seivece list  -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/WzkkPsmq/image.jpg"
+                class="card-img-top"
+                alt="الخدمات الرقمية والتحول الرقمي"
+              />
+              <div class="card-body">
+                <h5 class="card-title">الخدمات الرقمية والتحول الرقمي</h5>
+                <p class="card-text">
+                  مستقبل أسرع وأكثر ذكاءً – حلول رقمية مبتكرة. ومستقبل أكثر سرعة
+                  وذكاءً من خلال حلول رقمية مبتكرة وشاملة تعزز الكفاءة وتواكب
+                  التطورات التكنولوجية.
+                </p>
+                <a target="_blank" href="serivce.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/jjT9hpnt/3d-character-emerging-from-smartphone.jpg" class="card-img-top" alt="أجهزة الموبايل الذكية" />
-          <div class="card-body">
-            <h5 class="card-title">أجهزة الموبايل الذكية</h5>
-            <p class="card-text">أحدث تقنيات الهواتف الذكية بين يديك. وأصبحت أجهزة الموبايل الذكية جزءًا لا يتجزأ من حياتنا، حيث تسعى الشركات إلى تقديم أكبر قدر من المميزات والتقنيات الحديثة لتلبية احتياجات المستخدمين.</p>
-            <a href="mobile.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/7ZHtGgFZ/plant-growing-from-soil.jpg" class="card-img-top" alt="شبكات الحاسبات" />
-          <div class="card-body">
-            <h5 class="card-title">شبكات الحاسبات</h5>
-            <p class="card-text">ربط العالم بتقنيات متطورة.</p>
-            <a href="network.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/C5mWSVFY/cartoon-ai-robot-scene.jpg" class="card-img-top" alt="تعلم الآلة" />
-          <div class="card-body">
-            <h5 class="card-title">تعلم الآلة</h5>
-            <p class="card-text">الذكاء الاصطناعي يتعلم ليبتكر.</p>
-            <a href="machine.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/vmr2Gdzj/Neural-networks.jpg" class="card-img-top" alt="الشبكات العصبية" />
-          <div class="card-body">
-            <h5 class="card-title">الشبكات العصبية</h5>
-            <p class="card-text">تحاكي العقل البشري لفهم البيانات.</p>
-            <a href="natural.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/qv3C4YRf/ai.webp" class="card-img-top" alt="التعلم العميق" />
-          <div class="card-body">
-            <h5 class="card-title">التعلم العميق</h5>
-            <p class="card-text">تحليل البيانات بذكاء يشبه العقل البشري.</p>
-            <a href="deep.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6">
-        <div class="card service-card h-100">
-          <img src="https://i.postimg.cc/VNXMBTQ9/card.webp" class="card-img-top" alt="الأمن السيبراني" />
-          <div class="card-body">
-            <h5 class="card-title">الأمن السيبراني</h5>
-            <p class="card-text">درع الحماية الرقمية ضد التهديدات.</p>
-            <a href="cyber.html" class="btn btn-primary">اعرف أكثر</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Services -->
 
-<!-- Start Footer -->
-<footer class="text-center py-4 bg-dark text-light">
-  <div class="container">
-    <p class="mb-2">&copy; 2025 جميع الحقوق محفوظة لدينا | معهد راية العالي - مجموعة رقم 17</p>
-    <div class="footer-icons mt-2">
-      <a href="#" class="text-light mx-2"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#" class="text-light mx-2"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#" class="text-light mx-2"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-  </div>
-</footer>
-<!-- End Footer -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/jjT9hpnt/3d-character-emerging-from-smartphone.jpg"
+                class="card-img-top"
+                alt="أجهزة الموبايل الذكية"
+              />
+              <div class="card-body">
+                <h5 class="card-title">أجهزة الموبايل الذكية</h5>
+                <p class="card-text">
+                  أحدث تقنيات الهواتف الذكية بين يديك. وأصبحت أجهزة الموبايل
+                  الذكية جزءًا لا يتجزأ من حياتنا، حيث تسعى الشركات إلى تقديم
+                  أكبر قدر من المميزات والتقنيات الحديثة لتلبية احتياجات
+                  المستخدمين.
+                </p>
+                <a target="_blank" href="mobile.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/7ZHtGgFZ/plant-growing-from-soil.jpg"
+                class="card-img-top"
+                alt="شبكات الحاسبات"
+              />
+              <div class="card-body">
+                <h5 class="card-title">شبكات الحاسبات</h5>
+                <p class="card-text">ربط العالم بتقنيات متطورة.</p>
+                <a target="_blank" href="network.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/C5mWSVFY/cartoon-ai-robot-scene.jpg"
+                class="card-img-top"
+                alt="تعلم الآلة"
+              />
+              <div class="card-body">
+                <h5 class="card-title">تعلم الآلة</h5>
+                <p class="card-text">الذكاء الاصطناعي يتعلم ليبتكر.</p>
+                <a target="_blank" href="machine.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/vmr2Gdzj/Neural-networks.jpg"
+                class="card-img-top"
+                alt="الشبكات العصبية"
+              />
+              <div class="card-body">
+                <h5 class="card-title">الشبكات العصبية</h5>
+                <p class="card-text">تحاكي العقل البشري لفهم البيانات.</p>
+                <a target="_blank" href="natural.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/qv3C4YRf/ai.webp"
+                class="card-img-top"
+                alt="التعلم العميق"
+              />
+              <div class="card-body">
+                <h5 class="card-title">التعلم العميق</h5>
+                <p class="card-text">تحليل البيانات بذكاء يشبه العقل البشري.</p>
+                <a target="_blank" href="deep.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="card service-card h-100">
+              <img
+                src="https://i.postimg.cc/VNXMBTQ9/card.webp"
+                class="card-img-top"
+                alt="الأمن السيبراني"
+              />
+              <div class="card-body">
+                <h5 class="card-title">الأمن السيبراني</h5>
+                <p class="card-text">درع الحماية الرقمية ضد التهديدات.</p>
+                <a target="_blank" href="cyber.html" class="btn btn-primary"
+                  >اعرف أكثر</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- scrool -->
+    <button id="scrollToTop" class="scroll-btn">↑</button>
+    <!-- scrool -->
+    <!-- Start Footer -->
+    <footer class="text-center py-4 bg-dark text-light">
+      <div class="container">
+        <p class="mb-2">
+          &copy; 2025 جميع الحقوق محفوظة لدينا | معهد راية العالي - مجموعة رقم
+          17
+          <br />
+          Dr/Elsaeed Abdelrazek<br />
+          Dr/Rana Elbighily
+        </p>
+
+        <div class="footer-icons mt-2">
+          <a href="#" class="text-light mx-2"
+            ><i class="fa-brands fa-facebook"></i></a
+          >|
+          <a href="#" class="text-light mx-2"
+            ><i class="fa-brands fa-twitter"></i></a
+          >|
+          <a href="#" class="text-light mx-2"
+            ><i class="fa-brands fa-instagram"></i></a
+          >|
+          <a href="#" class="text-light mx-2"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
     <!--  Font Awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Script page -->
+    <script src="mainsc.js"></script>
   </body>
 </html>
