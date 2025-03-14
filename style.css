@@ -247,23 +247,23 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 24px;
-  color: white;
-  background: #007bff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
   display: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s, transform 0.3s;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  z-index: 9999 !important;
 }
 .scroll-btn:hover {
-  background: #0056b3;
-  transform: scale(1.1);
+  background: #ffcc00;
 }
-/* End btn scrool */
 /* Start Footer */
 footer {
   background-color: #342d2d;
